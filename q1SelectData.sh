@@ -22,7 +22,7 @@ with open(input_file, newline='', mode='r') as infile, \
 
     for row in reader:
         if len(row) > 18:
-            writer.writerow([row[4], row[5], row[15], row[17]])
+            writer.writerow([row[4], row[5], row[8], row[15], row[16], row[17]])
 "
 done
 
