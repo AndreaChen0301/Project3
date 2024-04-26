@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# The input data file
+DATA_FILE="data.csv"
+
+# Column number where the language is stored; assuming it is the second column
+LANG_COL=2
+
+# Skip the header row and read each subsequent line
+tail -n +2 "$DATA_FILE" | while IFS=, read -r line
+do
+  # Extract the language value
+  lang=$(echo "$line" | cut -d',' -f$LANG_COL)
+
+  # Remove spaces or special characters if necessary
+  lang=$(echo "$lang" | tr -d ' ')
+
+  # Write the line to the corresponding language file, adding CSV header if file does not exist
+  if [ ! -f "${lang}.csv" ]; then
+    head -n 1 "$DATA_FILE" > "${lang}.csv"
+  fi
+  echo "$line" >> "${lang}.csv"
+done

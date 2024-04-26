@@ -12,4 +12,4 @@ Rscript -e "data = read.csv('$input_file'); \
                  write.csv(data_split[[i]], filename, row.names = FALSE); \
              }"
 
-
+echo "done spliting the data"
