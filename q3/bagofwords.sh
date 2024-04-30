@@ -1,6 +1,7 @@
 #!/bin/bash
 data_dir="/workspace/linmaneechot/steam_data"
 q3_dir="/workspace/linmaneechot/q3"
+df=/workspace/linmaneechot/steam_data/output_$SLURM_ARRAY_TASK_ID.csv
 
 tar -xzf python39.tar.gz
 tar -xzf packages.tar.gz
@@ -18,4 +19,4 @@ export PYTHONPATH=$PWD/packages
 export HOME=$PWD
 module load python
 
-python bagofwords.py  > output.txt
+python bagofwords.py "$df" > output.txt
