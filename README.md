@@ -14,7 +14,7 @@ Steps taken for downloading the steam-reviews dataset from Kaggle:
 To access the data, run `cd /workspace/linmaneechot/steam_data/all_reviews/all_reviews.csv` in lunchbox
 
 
-How to Run Analysis:
+#### How to Run Analysis:
 
 1. Clone the github repo with `clone git@github.com:AndreaChen0301/Project3.git`
 
