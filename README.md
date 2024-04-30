@@ -18,7 +18,7 @@ To access the data, run `cd /workspace/linmaneechot/steam_data/all_reviews/all_r
 
 1. Clone the github repo with `clone git@github.com:AndreaChen0301/Project3.git`
 
-2. Run data.sh, getElglish.sh, and splitData.sh respectively
+2. Run data.sh, getEnglish.sh, and splitData.sh respectively
 
 3. There's a directory for each research question. In order to get analysis for each part, run submit script in each directory
 
