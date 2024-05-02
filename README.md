@@ -20,10 +20,10 @@ To access the data, run `cd /workspace/linmaneechot/steam_data/all_reviews/all_r
 
 2. Run data.sh, getEnglish.sh, and splitData.sh respectively
 
-3. There's a directory for each research question. In order to get analysis for each part, run submit script in each directory
+3. There's a directory for each research question. In order to get analysis for each part, run submit or shell script in each directory
 
        q1/submit1.sh
-       q2/submit.sh
+       q2/q2Analysis.sh
        q3/submit.sh
 
-4. All the data are stored in directories (steam_review, q1, q2, q3) in `workspace/linmaneechot/`
+4. All the data are stored in directories (steam_review, q1, q2, q3) in `/workspace/linmaneechot/`
