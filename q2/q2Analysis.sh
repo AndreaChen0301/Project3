@@ -14,5 +14,5 @@ Rscript -e "data = read.csv('$dest_dir/allData.csv'); \
              helpful_score = data[,2]; \
              cor_q2 = as.character(cor(life_min, helpful_score)); \
              sum_lm_model = as.character(summary(lm(life_min~helpful_score))); \
-             cat(cor_q2, file = paste0('$dest_dir','/q2cor.txt')); \
-             cat(sum_lm_model, file = paste0('$dest_dir','/q2summary.txt'))"
+             cat(cor_q2, file = 'q2cor.txt'); \
+             cat(sum_lm_model, file = 'q2summary.txt')"
