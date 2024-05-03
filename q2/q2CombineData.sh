@@ -5,7 +5,7 @@ dest_dir="/workspace/linmaneechot/q2/allData"
 
 cat "$source_dir"/*.csv | tail -n +2  > "$dest_dir"/allData.csv
 
-# Run R script and capture output
+# Run R script and capture output - Did not work well
 Rscript -e "data = read.csv('$dest_dir/allData.csv'); \
              data = na.omit(data); \
              data[,1] = as.numeric(data[,1]); \
